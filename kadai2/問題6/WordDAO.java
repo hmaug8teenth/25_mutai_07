@@ -66,7 +66,7 @@ public List<Word> getWords() {
 		rs = st.executeQuery();
 
 		while (rs.next()) {
-			Word wd = new Word(rs.getString("engilish"), rs.getString("japanese"));
+			Word wd = new Word(rs.getString("english"), rs.getString("japanese"));
 			words.add(wd);
 		}
 	} catch (ClassNotFoundException e) {
